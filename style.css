@@ -1,0 +1,157 @@
+body{
+    font-family: Montserrat,sans-serif;
+    font-weight: 900;
+}
+.clock{
+    /* font-size: 10vw; */
+    margin: auto;
+    width: auto;
+}
+.settings{
+    padding-top: 3vh;
+}
+#session{
+    font-size: min(3vw,30px);
+}
+#date{
+    font-size: min(6vw,50px);
+    padding-top: 12vh;
+}
+#time{
+    font-size: min(15vw,150px);
+}
+.dark{
+    background-color: rgb(5, 21, 29);
+    color: #ccb2b2; 
+}
+.normal{
+    background-color: #f3f3f3;
+    color: #343434;
+}
+.seconds-dark{
+    color: #3b3838;
+}
+.seconds-normal{
+    color: #a09b9b;
+}
+.switch {
+position: relative;
+display: inline-block;
+width: 42px;
+height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #14202b;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #14202b;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(16px);
+-ms-transform: translateX(16px);
+transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+
+
+
+.btn {
+    border: 3px solid #a09b9b;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    transition: background 600ms ease, color 600ms ease;
+  }
+  
+  input[type=radio].toggle {
+    display: none;
+  }
+  input[type=radio].toggle + label {
+    cursor: pointer;
+    min-width: 60px;
+  }
+  input[type=radio].toggle + label:hover {
+    background: none;
+    color: #a09b9b;
+  }
+  input[type=radio].toggle + label:after {
+    background: #1a1a1a;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+    width: 100%;
+    z-index: -1;
+  }
+  input[type=radio].toggle.toggle-left + label {
+    border-right: 0;
+  }
+  input[type=radio].toggle.toggle-left + label:after {
+    left: 100%;
+  }
+  input[type=radio].toggle.toggle-right + label {
+    margin-left: -5px;
+  }
+  input[type=radio].toggle.toggle-right + label:after {
+    left: -100%;
+  }
+  input[type=radio].toggle:checked + label {
+    cursor: default;
+    color: #fff;
+    transition: color 200ms;
+  }
+  input[type=radio].toggle:checked + label:after {
+    left: 0;
+  }
+
+
+
+
+
+  

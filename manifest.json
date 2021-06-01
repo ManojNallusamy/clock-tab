@@ -1,0 +1,29 @@
+{
+    "name": "Clock",
+    "description": "Turn your newtab into a digital clock",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage",
+        "sessions",
+        "tabs"],
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+    "action": {
+        "default_icon": {
+            "16": "/images/16.png",
+            "32": "/images/32.png",
+            "48": "/images/48.png",
+            "128": "/images/128.jpg"
+          }
+    },
+    "icons": {
+        "16": "/images/16.png",
+        "32": "/images/32.png",
+        "48": "/images/48.png",
+        "128": "/images/128.jpg"
+      }
+  }

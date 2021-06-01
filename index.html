@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>CLOCK</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<body class="dark">
+    <div class="container">
+        <div class="row">
+            <div id="date" class="clock">
+                <span id="date-week"></span>&emsp;<span id="date-month"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div id="time" class="clock">
+                <span id="hour-minute">00:00</span><span id="seconds" class="seconds-dark">:00</span><span id="session"></span>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="clock">
+                <p id="session"></p>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="clock settings">
+                Dark
+                <label class="switch">
+                    <input type="checkbox" id="mode">
+                    <span class="slider round"></span>
+                </label>
+                Light
+            </div>
+        </div>
+        <div class="row">
+            <div class="clock settings">
+                <input id="toggle-12" class="toggle toggle-left" name="toggle" value="12" type="radio">
+                <label for="toggle-12" class="btn">12H</label>
+                <input id="toggle-24" class="toggle toggle-right" name="toggle" value="24" type="radio" checked>
+                <label for="toggle-24" class="btn">24H</label>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
