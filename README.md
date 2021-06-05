@@ -1,6 +1,8 @@
 # Chrome ClockTab
 A simple new tab page replacement for Google Chrome.
 
+Demo Site: https://manojnallusamy.github.io/clock-tab/
+
 <h3>Process to install in Google Chrome as extension : </h3>
 <ul>
 <li> Open Terminal</li>
