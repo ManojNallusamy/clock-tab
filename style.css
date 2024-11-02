@@ -150,6 +150,29 @@ border-radius: 50%;
     left: 0;
   }
 
+.bn1 {
+    border: 0.1em solid #3b3838;
+    display: inline-block;
+    padding: 0.6em 1.7em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* font-family: "Roboto", sans-serif;
+    font-weight: 300; */
+    color: #a09b9b;
+    text-align: center;
+    transition: all 0.2s;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
+  }
+  
+  .bn1:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
 
 
 
